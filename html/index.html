@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<META http-equiv="refresh" content="5; url=main.html">
+	<title>Favorite Fabric</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+	$(function(){
+                $('#logo').click(function(){
+                    setTimeout( function(){
+                        window.location.href = 'home.html'}, 1000 )
+                });
+    });
+    </script>
+
+	<style type="text/css">
+
+		@font-face {
+	    font-family: 'CWDangamAsac-Bold';
+	    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+        }
+		
+		*{
+			margin: 0;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		body{
+			background-color: #fff;
+		}
+
+		body::-webkit-scrollbar {
+            display: none;
+        }
+
+		.box1{
+			position: relative;
+			float: left;
+			width: calc(100%/6);
+			height: 100vh;
+			background-image: url('https://i.postimg.cc/1tjvN0mh/bluewool.jpg');
+
+			animation: up 2.5s;
+		}
+
+		@keyframes up{
+
+            0%{bottom: -1200px;}
+
+            100%{bottom: 0;}
+        }
+
+        @keyframes down{
+
+            0%{top: -1200px;}
+
+            100%{top: 0;}
+        }
+
+		.box2{
+			position: relative;
+			float: left;
+			width: calc(100%/6);
+			height: 100vh;
+			background-image: url('https://i.postimg.cc/Y0xfz1kC/crocodile.jpg');
+
+			animation: down 3s;
+		}
+
+		.box3{
+			position: relative;
+			float: left;
+			width: calc(100%/6);
+			height: 100vh;
+			background-image: url('https://i.postimg.cc/8c3WHw9D/velvet.jpg');
+
+			animation: up 2s;
+		}
+
+		.box4{
+			position: relative;
+			float: left;
+			width: calc(100%/6);
+			height: 100vh;
+			background-image: url('https://i.postimg.cc/zXrRJbNx/cashmere.jpg');
+
+			animation: down 2.5s;
+		}
+
+		.box5{
+			position: relative;
+			float: left;
+			width: calc(100%/6);
+			height: 100vh;
+			background-image: url('https://i.postimg.cc/yxQqr3y7/Corduroy.jpg');
+
+			animation: up 3s;
+		}
+
+		.box6{
+			position: relative;
+			float: left;
+			width: calc(100%/6);
+			height: 100vh;
+			background-image: url('https://i.postimg.cc/BZT2T2BG/woven.jpg');
+
+			animation: down 2s;
+		}
+
+		#logo{
+			position: absolute;
+			width: 1040px;
+			height: 120px;
+			font-family: 'CWDangamAsac-Bold';
+			color: #fff;
+			font-size: 100px;
+			margin-left: calc(100vw/2 - 520px);
+			margin-top: calc(100vh/2 - 60px);
+			animation: opa 4s;
+		}
+
+		@keyframes opa{
+
+            0%{opacity: 0;}
+
+            50%{opacity: 0;}
+
+            100%{opacity: 100;}
+        }
+
+	</style>
+</head>
+
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="box5"></div>
+	<div class="box6"></div>
+	<div id="logo">Favorite + Fabric</div>
+</html>
